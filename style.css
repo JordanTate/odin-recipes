@@ -20,7 +20,7 @@ html, body{
 }
 
 /* Global */
-h1, h2, h4, p{
+h1, h2, h4, p, ul{
     font-family: 'Raleway', sans-serif;
     color: #fff;
 }
@@ -29,6 +29,7 @@ body{
 }
 .logo{
     width: 100%;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +37,8 @@ body{
     box-shadow: 0 1px 0 0 #C38D9E;
 }
 .logo img{
-    width: 150px;
+    width: auto;
+    height: 100%;
 }
 .header{
     padding: 40px 0;
@@ -44,7 +46,7 @@ body{
     text-transform: uppercase;
 }
 
-/* Homwpage */
+/* Homepage */
 .group{
     width: 100%;
     display: flex;
@@ -102,6 +104,43 @@ body{
     background-color: #E27D60;
 }
 
+/* Recipe Page */
+.recipe, .content__image img{
+    height: 100vh;
+}
+.recipe{
+    width: 100vw;
+    overflow: hidden;
+}
+.content{
+    display: flex;
+    width: 100%;
+}
+.content__image{
+    width: 33%;
+    overflow: hidden;
+}
+.content__post{
+    width: 66%;
+    height: 85vh;
+    overflow: auto;
+    padding: 60px 20px;
+}
+.content__post h1{
+    text-align: center;
+}
+.content__post h2{
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid;
+}
+.content__post-description{
+    padding: 20px 40px;
+}
+.content__post-description ul, .content__post-description li{
+    padding-bottom: 20px;
+}
+
 /* Media */
 @media (max-width: 819px) {
     .group__item-card__description{
@@ -109,6 +148,24 @@ body{
     }
     .group__item h2{
         display: block;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content__image{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .content__image img{
+        width: 100%;
+        height: auto;
+    }
+    .content__post{
+        width: 100%;
+        height: 70vh;
     }
 }
 @media (max-width: 1400px) {
