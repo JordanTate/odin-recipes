@@ -121,10 +121,10 @@ body{
     overflow: hidden;
 }
 .content__post{
-    width: 66%;
+    width: 100%;
     height: 85vh;
     overflow: auto;
-    padding: 60px 20px;
+    padding: 60px 40px;
 }
 .content__post h1{
     text-align: center;
@@ -134,12 +134,20 @@ body{
     margin-bottom: 20px;
     border-bottom: 1px solid;
 }
+.content__post::-webkit-scrollbar{
+    width: 5px;
+}
+.content__post::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background-color: #ffffff80;
+}
 .content__post-description{
     padding: 20px 40px;
 }
 .content__post-description ul, .content__post-description li{
     padding-bottom: 20px;
 }
+
 
 /* Media */
 @media (max-width: 819px) {
@@ -164,7 +172,6 @@ body{
         height: auto;
     }
     .content__post{
-        width: 100%;
         height: 70vh;
     }
 }
