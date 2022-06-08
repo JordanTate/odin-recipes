@@ -145,8 +145,11 @@ body{
 .content__post-description{
     padding: 20px 40px;
 }
+.content__post-description h3{
+    padding-top: 20px;
+}
 .content__post-description ul, .content__post-description li{
-    padding-bottom: 20px;
+    padding: 4px 0 10px 0;
 }
 
 
