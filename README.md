@@ -5,6 +5,8 @@ I hope you enjoy these three recipes. I originally found them on Reddit, along w
 
 *Tip for the Hungarian Goulash - Double the Paprika and Smoked Paprika Measurements!*
 
+[View Page](https://jordantate.github.io/odin-recipes)
+
 ## Homepage
 ![Homepage](assets/ODIN-RECIPES_HOMEPAGE.png)
 
