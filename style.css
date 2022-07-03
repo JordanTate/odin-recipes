@@ -161,6 +161,9 @@ body{
     .group__item h2{
         display: block;
     }
+    .recipe{
+        overflow: scroll;
+    }
     .content{
         flex-direction: column;
     }
@@ -177,6 +180,7 @@ body{
     }
     .content__post{
         height: 70vh;
+        overflow: revert;
     }
 }
 @media (max-width: 1400px) {
